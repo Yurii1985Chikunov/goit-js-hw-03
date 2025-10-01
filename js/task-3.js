@@ -1,3 +1,13 @@
+function filterArray(numbers, value) {
+  const newMass = [];
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] > value) {
+      newMass.push(numbers[i]);
+    }
+  }
+  return newMass;
+}
+
 console.log(filterArray([1, 2, 3, 4, 5], 3)); // [4, 5]
 console.log(filterArray([1, 2, 3, 4, 5], 4)); // [5]
 console.log(filterArray([1, 2, 3, 4, 5], 5)); // []
